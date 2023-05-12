@@ -13,6 +13,7 @@ pub enum TextureFormat {
 }
 
 #[derive(Debug)]
+#[repr(C)]
 pub struct Header {
     pub size: u32,
     pub format: TextureFormat,
@@ -26,6 +27,7 @@ pub struct Header {
 }
 
 #[derive(Debug)]
+#[repr(C)]
 pub struct Texture {
     res: u32,
     version: u32,
